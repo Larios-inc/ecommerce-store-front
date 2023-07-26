@@ -14,22 +14,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
 
     return (
         <button
-            className={cn(
-              `
-                w-auto
-                rounded-full
-                bg-black
-                border-transparent
-                px-5
-                py-3
-                disabled: cursor-not-allowed
-                disabled: opacity-50
-                test-white
-                font-semibold
-                hover:opacity-75
-                transition
-              `,
-              className  
+            className={cn("w-auto rounded-full bg-black border-transparent px-5 py-3 disabled: cursor-not-allowed disabled:opacity-50 text-white font-semibold hover:opacity-75 transition",
+            className  
             )}
             ref={ref}
         >
