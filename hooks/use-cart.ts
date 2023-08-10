@@ -11,7 +11,7 @@ interface CartStore {
 }
 
 const useCart = create(
-    persist<CartStore>((set, get)=> ({
+    persist<CartStore>((set, get) => ({
         items:[],
         addItem: (data: Product) =>{
             const currentItems = get().items;
